@@ -1,0 +1,376 @@
+{
+    "results": [
+        {
+            "fsq_id": "4d29b8ef3c795481133ada9b",
+            "categories": [
+                {
+                    "id": 16026,
+                    "name": "Monument",
+                    "short_name": "Monument",
+                    "plural_name": "Monuments",
+                    "icon": {
+                        "prefix": "https://ss3.4sqi.net/img/categories_v2/building/government_monument_",
+                        "suffix": ".png"
+                    }
+                }
+            ],
+            "chains": [],
+            "closed_bucket": "LikelyOpen",
+            "distance": 216979,
+            "geocodes": {
+                "main": {
+                    "latitude": -22.951761,
+                    "longitude": -43.21088
+                },
+                "roof": {
+                    "latitude": -22.951761,
+                    "longitude": -43.21088
+                }
+            },
+            "link": "/v3/places/4d29b8ef3c795481133ada9b",
+            "location": {
+                "address": "Estrada do Corcovado",
+                "country": "BR",
+                "cross_street": "Pq. Nacional da Tijuca",
+                "formatted_address": "Estrada do Corcovado (Pq. Nacional da Tijuca), Rio de Janeiro, RJ, 22241-200",
+                "locality": "Rio de Janeiro",
+                "post_town": "Santa Teresa",
+                "postcode": "22241-200",
+                "region": "RJ"
+            },
+            "name": "Christ the Redeemer (Cristo Redentor)",
+            "related_places": {
+                "parent": {
+                    "fsq_id": "4ede35cff9abeea3de14fc93",
+                    "categories": [
+                        {
+                            "id": 16000,
+                            "name": "Landmarks and Outdoors",
+                            "short_name": "Landmarks and Outdoors",
+                            "plural_name": "Landmarks and Outdoors",
+                            "icon": {
+                                "prefix": "https://ss3.4sqi.net/img/categories_v2/parks_outdoors/default_",
+                                "suffix": ".png"
+                            }
+                        }
+                    ],
+                    "name": "Corcovado"
+                },
+                "children": [
+                    {
+                        "fsq_id": "6294cb557b2f4d3a303f5c88",
+                        "categories": [
+                            {
+                                "id": 12101,
+                                "name": "Church",
+                                "short_name": "Church",
+                                "plural_name": "Churches",
+                                "icon": {
+                                    "prefix": "https://ss3.4sqi.net/img/categories_v2/building/religious_church_",
+                                    "suffix": ".png"
+                                }
+                            }
+                        ],
+                        "name": "Capela de Nossa Senhora da Aparecida"
+                    }
+                ]
+            },
+            "timezone": "America/Sao_Paulo"
+        },
+        {
+            "fsq_id": "52e4268e11d2bdef6d5f3266",
+            "categories": [
+                {
+                    "id": 19000,
+                    "name": "Travel and Transportation",
+                    "short_name": "Travel and Transportation",
+                    "plural_name": "Travel and Transportation",
+                    "icon": {
+                        "prefix": "https://ss3.4sqi.net/img/categories_v2/travel/default_",
+                        "suffix": ".png"
+                    }
+                }
+            ],
+            "chains": [],
+            "closed_bucket": "Unsure",
+            "distance": 12643,
+            "geocodes": {
+                "drop_off": {
+                    "latitude": -21.137649,
+                    "longitude": -44.228331
+                },
+                "main": {
+                    "latitude": -21.137615,
+                    "longitude": -44.228412
+                },
+                "roof": {
+                    "latitude": -21.137615,
+                    "longitude": -44.228412
+                }
+            },
+            "link": "/v3/places/52e4268e11d2bdef6d5f3266",
+            "location": {
+                "address": "Rua Vitoria Regia, 373",
+                "country": "BR",
+                "cross_street": "",
+                "formatted_address": "Rua Vitoria Regia, 373, São João del-Rei, MG, 36305-300",
+                "locality": "São João del-Rei",
+                "postcode": "36305-300",
+                "region": "MG"
+            },
+            "name": "Hotel Cristo Rei 611",
+            "related_places": {},
+            "timezone": "America/Sao_Paulo"
+        },
+        {
+            "fsq_id": "533f41f6498ea3e44fa405e1",
+            "categories": [
+                {
+                    "id": 13079,
+                    "name": "Brazilian Restaurant",
+                    "short_name": "Brazilian",
+                    "plural_name": "Brazilian Restaurants",
+                    "icon": {
+                        "prefix": "https://ss3.4sqi.net/img/categories_v2/food/argentinian_",
+                        "suffix": ".png"
+                    }
+                }
+            ],
+            "chains": [],
+            "closed_bucket": "LikelyOpen",
+            "distance": 13333,
+            "geocodes": {
+                "main": {
+                    "latitude": -21.130555,
+                    "longitude": -44.252735
+                },
+                "roof": {
+                    "latitude": -21.130555,
+                    "longitude": -44.252735
+                }
+            },
+            "link": "/v3/places/533f41f6498ea3e44fa405e1",
+            "location": {
+                "country": "BR",
+                "cross_street": "",
+                "formatted_address": "São João del-Rei, MG",
+                "locality": "São João del-Rei",
+                "region": "MG"
+            },
+            "name": "Bar São Cristóvão Horácio",
+            "related_places": {},
+            "timezone": "America/Sao_Paulo"
+        },
+        {
+            "fsq_id": "5585ade7498e35640a65d053",
+            "categories": [
+                {
+                    "id": 17059,
+                    "name": "Butcher",
+                    "short_name": "Butcher",
+                    "plural_name": "Butchers",
+                    "icon": {
+                        "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/food_butcher_",
+                        "suffix": ".png"
+                    }
+                }
+            ],
+            "chains": [],
+            "closed_bucket": "LikelyOpen",
+            "distance": 13679,
+            "geocodes": {
+                "main": {
+                    "latitude": -21.127385,
+                    "longitude": -44.235907
+                },
+                "roof": {
+                    "latitude": -21.127385,
+                    "longitude": -44.235907
+                }
+            },
+            "link": "/v3/places/5585ade7498e35640a65d053",
+            "location": {
+                "country": "BR",
+                "cross_street": "",
+                "formatted_address": "São João del-Rei, MG",
+                "locality": "São João del-Rei",
+                "region": "MG"
+            },
+            "name": "Embutidos Cristo Rei",
+            "related_places": {},
+            "timezone": "America/Sao_Paulo"
+        },
+        {
+            "fsq_id": "523c5bdd11d2f94ef3a06b0f",
+            "categories": [
+                {
+                    "id": 19000,
+                    "name": "Travel and Transportation",
+                    "short_name": "Travel and Transportation",
+                    "plural_name": "Travel and Transportation",
+                    "icon": {
+                        "prefix": "https://ss3.4sqi.net/img/categories_v2/travel/default_",
+                        "suffix": ".png"
+                    }
+                }
+            ],
+            "chains": [],
+            "closed_bucket": "LikelyOpen",
+            "distance": 13711,
+            "geocodes": {
+                "main": {
+                    "latitude": -21.126912,
+                    "longitude": -44.247269
+                }
+            },
+            "link": "/v3/places/523c5bdd11d2f94ef3a06b0f",
+            "location": {
+                "address": "Praça Pres Vargas, S/N",
+                "country": "BR",
+                "cross_street": "",
+                "formatted_address": "Praça Pres Vargas, S/N, São João del-Rei, MG",
+                "locality": "São João del-Rei",
+                "region": "MG"
+            },
+            "name": "Viação São Cristóvão",
+            "related_places": {},
+            "timezone": "America/Sao_Paulo"
+        },
+        {
+            "fsq_id": "535ec9f6498eef08925ddb31",
+            "categories": [
+                {
+                    "id": 12101,
+                    "name": "Church",
+                    "short_name": "Church",
+                    "plural_name": "Churches",
+                    "icon": {
+                        "prefix": "https://ss3.4sqi.net/img/categories_v2/building/religious_church_",
+                        "suffix": ".png"
+                    }
+                }
+            ],
+            "chains": [],
+            "closed_bucket": "LikelyOpen",
+            "distance": 14244,
+            "geocodes": {
+                "drop_off": {
+                    "latitude": -21.122467,
+                    "longitude": -44.245851
+                },
+                "main": {
+                    "latitude": -21.122087,
+                    "longitude": -44.245711
+                },
+                "roof": {
+                    "latitude": -21.122087,
+                    "longitude": -44.245711
+                }
+            },
+            "link": "/v3/places/535ec9f6498eef08925ddb31",
+            "location": {
+                "address": "Rua Expedicionário José Caraza Neto",
+                "country": "BR",
+                "cross_street": "",
+                "formatted_address": "Rua Expedicionário José Caraza Neto, São João del-Rei, MG, 36301-200",
+                "locality": "São João del-Rei",
+                "postcode": "36301-200",
+                "region": "MG"
+            },
+            "name": "Centro Espírita Kardecista - Jesus o Cristo",
+            "related_places": {},
+            "timezone": "America/Sao_Paulo"
+        },
+        {
+            "fsq_id": "2f52950e1d154a7efb113c33",
+            "categories": [
+                {
+                    "id": 16014,
+                    "name": "Farm",
+                    "short_name": "Farm",
+                    "plural_name": "Farms",
+                    "icon": {
+                        "prefix": "https://ss3.4sqi.net/img/categories_v2/parks_outdoors/farm_",
+                        "suffix": ".png"
+                    }
+                }
+            ],
+            "chains": [],
+            "closed_bucket": "LikelyClosed",
+            "distance": 12723,
+            "geocodes": {
+                "main": {
+                    "latitude": -21.137095,
+                    "longitude": -44.226399
+                },
+                "roof": {
+                    "latitude": -21.137095,
+                    "longitude": -44.226399
+                }
+            },
+            "link": "/v3/places/2f52950e1d154a7efb113c33",
+            "location": {
+                "address": "Rua Gerânios, 555",
+                "country": "BR",
+                "formatted_address": "Rua Gerânios, 555, São João Del Rei, MG, 36305-302",
+                "locality": "São João Del Rei",
+                "post_town": "Pio Xii",
+                "postcode": "36305-302",
+                "region": "MG"
+            },
+            "name": "Granja São Cristóvão",
+            "related_places": {}
+        },
+        {
+            "fsq_id": "06df8e7e1a544c0d9b856ff0",
+            "categories": [
+                {
+                    "id": 19054,
+                    "name": "Public Transportation",
+                    "short_name": "Public Transportation",
+                    "plural_name": "Public Transportation",
+                    "icon": {
+                        "prefix": "https://ss3.4sqi.net/img/categories_v2/travel/taxi_",
+                        "suffix": ".png"
+                    }
+                }
+            ],
+            "chains": [],
+            "closed_bucket": "Unsure",
+            "distance": 13505,
+            "geocodes": {
+                "main": {
+                    "latitude": -21.129433,
+                    "longitude": -44.231145
+                },
+                "roof": {
+                    "latitude": -21.129433,
+                    "longitude": -44.231145
+                }
+            },
+            "link": "/v3/places/06df8e7e1a544c0d9b856ff0",
+            "location": {
+                "address": "Avenida 7 de Setembro, 788",
+                "country": "BR",
+                "formatted_address": "Avenida 7 de Setembro, 788, São João Del Rei, MG, 36305-134",
+                "locality": "São João Del Rei",
+                "post_town": "Matozinhos",
+                "postcode": "36305-134",
+                "region": "MG"
+            },
+            "name": "Viação São Cristóvão",
+            "related_places": {}
+        }
+    ],
+    "context": {
+        "geo_bounds": {
+            "circle": {
+                "center": {
+                    "latitude": -21.2503,
+                    "longitude": -44.2448
+                },
+                "radius": 22000
+            }
+        }
+    }
+}
