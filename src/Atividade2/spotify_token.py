@@ -2,9 +2,10 @@ import requests
 import json
 import base64
 
-example_genres = ['blues', 'rock', 'soul']
+# Lista de gêneros para buscar
+example_genres = ['rock', 'piano', 'jazz', 'pop', 'hip-hop']
 
-# carregue as chaves
+# Carregar as chaves
 client_id = '6b63eb054e2d4e57b37c62c1a1373c0c'
 client_secret = 'f89ebd91fa974d068a260d6cf4dc5802'
 
@@ -37,21 +38,14 @@ def get_token(client_id, client_secret):
         print('Não foi possível obter o token de acesso')
         return None
 
-# teste da função
+# Obter token de acesso
 access_token = get_token(client_id, client_secret)
 
 def api_call(url, access_token):
     if access_token:
         response = requests.get(url, headers={'Authorization': access_token})
         if response.status_code == 200:
-            api_response = response.json()
-            
-            # Grava o JSON em um arquivo
-            with open('spotify_data.json', 'w') as f:
-                json.dump(api_response, f, indent=2)
-            
-            print("Resposta salva em spotify_data.json")
-            return api_response
+            return response.json()
         else:
             print(f"Erro na requisição: {response.status_code}")
             return None
@@ -59,8 +53,19 @@ def api_call(url, access_token):
         print("Token de acesso não disponível.")
         return None
 
-# definindo nosso endpoint com base na documentação
-url = 'https://api.spotify.com/v1/search?q=genre:rock&type=track&market=BR&limit=20&offset=0'
+# Buscar dados para cada gênero e salvar em um arquivo JSON
+all_genre_data = {}
+for genre in example_genres:
+    url = f'https://api.spotify.com/v1/search?q=genre:{genre}&type=track&market=BR&limit=20&offset=0'
+    print(f"Buscando dados para o gênero: {genre}")
+    genre_data = api_call(url, access_token)
+    
+    if genre_data:
+        all_genre_data[genre] = genre_data
+        print(f"Dados para o gênero '{genre}' adicionados.")
 
-# se a requisição estiver correta, ela deve salvar o JSON no arquivo
-api_call(url, access_token)
+# Salvar todos os dados em um único arquivo JSON
+with open('spotify_data.json', 'w') as f:
+    json.dump(all_genre_data, f, indent=2)
+
+print("Todos os dados salvos em spotify_data.json")
