@@ -10,7 +10,7 @@ with open('spotify_data.json', 'r') as f:
 G = nx.Graph()
 
 # Definir os gêneros a serem analisados
-generos = ['rock', 'piano', 'jazz', 'pop', 'hip-hop']  # Alterar conforme a lista de gêneros
+generos = ['rock', 'piano', 'jazz', 'pop', 'hip-hop']
 
 # Definir intervalos de popularidade
 popularidade_intervals = {
@@ -20,7 +20,7 @@ popularidade_intervals = {
     'Baixa Popularidade': range(0, 50)
 }
 
-# Montar a rede para cada faixa e artista (construção do grafo)
+# Montar a rede apenas entre faixas dentro do mesmo intervalo de popularidade
 for genre in generos:
     if genre in data:  # Verificar se o gênero existe no JSON carregado
         print(f"Processando gênero: {genre}")
@@ -28,23 +28,10 @@ for genre in generos:
             track_id = track['id']
             track_name = track['name']
             track_popularity = track['popularity']
-            album_id = track['album']['id']
-            album_name = track['album']['name']
             
             # Adicionar nó para a faixa com atributos
-            G.add_node(track_id, label=track_name, type='track', popularity=track_popularity, album=album_name, genre=genre)
+            G.add_node(track_id, label=track_name, type='track', popularity=track_popularity, genre=genre)
             
-            # Adicionar nós e arestas para cada artista associado à faixa
-            for artist in track['artists']:
-                artist_id = artist['id']
-                artist_name = artist['name']
-                
-                if artist_id not in G:
-                    G.add_node(artist_id, label=artist_name, type='artist', genre=genre)
-                
-                # Conectar a faixa ao artista
-                G.add_edge(track_id, artist_id)
-
             # Conectar faixas dentro do mesmo intervalo de popularidade
             for interval_name, interval_range in popularidade_intervals.items():
                 if track_popularity in interval_range:
@@ -78,12 +65,12 @@ plt.figure(figsize=(12, 12))
 pos = nx.spring_layout(G, seed=42)
 node_sizes = [1000 * eigenvector_centrality[node] for node in G.nodes()]
 
-nx.draw_networkx_nodes(G, pos, node_size=node_sizes, node_color="green", alpha=0.7)
+nx.draw_networkx_nodes(G, pos, node_size=node_sizes, node_color="blue", alpha=0.7)
 nx.draw_networkx_edges(G, pos, width=0.5, alpha=0.5)
 nx.draw_networkx_labels(G, pos, labels=nx.get_node_attributes(G, 'label'), font_size=8)
 
-plt.title("Grafo de Músicas e Artistas - Spotify (Gêneros Múltiplos)")
+plt.title("Grafo de Músicas - Conexões Baseadas em Popularidade (Spotify)")
 plt.axis("off")
 # Salvar a imagem antes de mostrar
-plt.savefig("grafo_spotify.png", format="png", dpi=300, bbox_inches="tight")  # Ajuste o formato e dpi conforme necessário
+plt.savefig("grafo_musicas_popularidade_spotify.png", format="png", dpi=300, bbox_inches="tight")
 plt.show()
